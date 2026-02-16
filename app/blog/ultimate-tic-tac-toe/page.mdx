@@ -7,13 +7,22 @@ export const metadata = {
   },
 };
 
-# Ultimate Tic Tac Toe
+# [Ultimate Tic Tac Toe](https://art-200-prototype.vercel.app/)
 
 ## The Prototype
 
-For this assignment, I created a digital prototype called Ultimate Tic Tac Toe, hosted at [https://art-200-prototype.vercel.app](https://art-200-prototype.vercel.app). The game is an interactive, browser-based version of Tic Tac Toe with added strategic depth. Unlike the traditional game, it uses a large 3×3 grid of smaller 3×3 boards, creating layers of decision-making and long-term planning.
+For this assignment, I designed **Ultimate Tic Tac Toe**, a browser-based strategy game that expands the familiar 3×3 Tic Tac Toe structure into a layered strategic system. The prototype is fully playable online, allowing rapid iteration and live playtesting.
 
-Players aim to win individual mini-boards by getting three in a row while also trying to win three mini-boards in a row on the larger board to claim overall victory. Each turn, a player selects a square in a mini-board, and the position of that square determines which mini-board the opponent must play in next. This mechanic forces players to think ahead and consider both immediate tactics and long-term strategy, balancing offense and defense across multiple levels. The game requires players to anticipate consequences several moves ahead, making every choice meaningful.
+The game features a 3×3 grid of smaller 3×3 boards. Players attempt to win individual mini-boards by completing three in a row. Victory on the global board occurs when a player wins three mini-boards in a row. The defining mechanic is the **redirection rule**: the square a player selects within a mini-board determines which mini-board the opponent must play in next.
+
+This mechanic creates two levels of strategic thinking:
+
+- **Local level:** Securing or blocking wins within a mini-board.
+- **Global level:** Controlling which board the opponent must play in next.
+
+The design goal was to explore depth through structure alone, rather than introducing new resources or abilities. Each move carries meaningful trade-offs between offense and defense, and successful players must anticipate multiple turns ahead.
+
+To maintain clarity, the prototype highlights the active mini-board and disables interaction on inactive boards. This ensures that strategic depth emerges from gameplay decisions, not confusion.
 
 <video
   src="/videos/art-200.mp4"
@@ -29,41 +38,86 @@ Players aim to win individual mini-boards by getting three in a row while also t
 
 *Prototype video preview (auto-play, muted).*
 
-### Rules Summary
-
-1. Win a mini-board by getting three in a row.
-2. Win the match by winning three mini-boards in a row on the larger grid.
-3. Your move determines the next mini-board your opponent must play in.
-4. If the directed mini-board is already won or full, your opponent can choose any available mini-board.
+---
 
 ## The Context
 
-For this assignment, we decided to explore innovative gameplay mechanics or twists on familiar games, create a working prototype, and refine it based on playtesting feedback. The goal was to design a game that encouraged meaningful player decisions while being feasible to prototype and test in a short timeframe.
+The assignment prompt asked for a game that introduces an innovative mechanic or twist on an existing system, refined through playtesting. The focus was on intentional design decisions under constraints, not visual polish.
 
-I was responsible for designing and implementing the digital prototype, defining the rules and interactions, and facilitating initial playtesting.
+I served as both designer and developer, responsible for:
 
-A key challenge was ensuring players understood the redirection rule, as it could initially be confusing which mini-board they were allowed to play in. Working within the time constraints of the assignment, I needed to prioritize mechanical clarity and functional interaction over visual polish.
+- Defining rules and interaction logic
+- Implementing the digital prototype
+- Designing the interface
+- Facilitating and documenting playtests
 
-To address these challenges, I added a concise instruction line at the top of the interface, highlighted the active mini-board visually so players could easily see where they were allowed to play next, and focused on creating meaningful player decisions and preserving strategic depth without overcomplicating the interface.
+Key constraints included:
+
+- **Clarity:** The redirection mechanic is unintuitive for new players.
+- **Time:** The prototype had to be mechanically complete within a short development cycle.
+
+To address these, I prioritized:
+
+- Mechanical functionality
+- Clear visual feedback
+- Playable stability
+
+I intentionally avoided aesthetic polish to focus on interaction clarity, because confusing rules would undermine the strategic system. Solutions included concise instructions, active board highlighting, and disabling inactive boards.
+
+---
 
 ## Brainstorming
 
-During brainstorming, I came up with fewer than 10 ideas, most of which were not very feasible or strategic given the limited time available. Many of the concepts were either too complex to implement quickly or lacked meaningful player decisions. This left only a few realistic options: creating a spin on the Tic Tac Toe idea or designing a Uno-inspired card game with social deduction elements. Ultimately, I chose to pursue the multi-layered Tic Tac Toe variant because it added strategic depth with a single, elegant new mechanic and could be implemented and playtested effectively within the class timeframe.
+Brainstorming focused on ways to introduce meaningful variation into familiar games. I generated fewer than ten initial concepts, including:
 
-## Choosing An Idea
+- A social-deduction card game inspired by Uno
+- Simulations based on repair mechanics
+- Multi-layered variations of Tic Tac Toe
 
-I selected Ultimate Tic Tac Toe because it added depth from simplicity, allowed for quick digital prototyping, and provided strong player agency through the redirection mechanic. The decision was based on which idea could be realistically implemented and tested while still offering meaningful strategic choices for players. Other ideas were interesting but either required more time to implement or did not provide as much actionable decision-making.
+Generating ideas was straightforward; the challenge lay in evaluating feasibility under constraints. Several concepts were eliminated due to complex balancing requirements or hidden information systems that would have been difficult to prototype and refine in the short timeframe.
+
+The **Ultimate Tic Tac Toe** idea stood out because it offered strategic depth through a single rule modification, allowing meaningful iteration and clear observation of player behavior.
+
+---
+
+## Choosing an Idea
+
+The team selected Ultimate Tic Tac Toe for its balance between strategic depth and implementation feasibility.
+
+Other concepts, like the social-deduction card game, promised dynamic interactions but required multiple systems, hidden information, and extensive playtesting to refine. In contrast, Ultimate Tic Tac Toe created depth through spatial constraint rather than additional mechanics, ensuring development time could be spent improving clarity and observing player strategy.
+
+Prioritization criteria included:
+
+- Mechanical clarity
+- Depth per rule
+- Feasible iteration within the timeframe
+
+This structured approach allowed us to select an idea that was both innovative and actionable.
+
+---
 
 ## Playtests
 
-Playtesting revealed that the redirection rule was initially confusing for players, which highlighted a need for clearer instructions or visual cues. Once understood, however, players naturally began planning multiple turns ahead, showing that the mechanic successfully promotes deeper strategic thinking. Additionally, they noted that losing a mini-board early could limit their options in subsequent turns, which suggested opportunities for iteration to improve player agency and maintain engagement.
+Playtesting revealed a gap between designer assumptions and player interpretation. The primary observation was that new players initially ignored the redirection rule, attempting to play anywhere on the board. This highlighted the importance of strong visual cues and instruction.
+
+Once players understood the rule (usually after two to three moves), behavior shifted dramatically:
+
+- Players began strategically sending opponents to disadvantaged boards
+- Decision-making became deeper, as each move impacted both local and global boards
+- Cognitive load increased, occasionally slowing game pacing
+
+These observations confirmed that the mechanic successfully encouraged strategic foresight, while also emphasizing the need for clear guidance and manageable pacing.
+
+---
 
 ## Iterating
 
-Based on the playtests, I made targeted adjustments focused on clarity and agency:
+Based on playtesting, the most meaningful iteration would address pacing under high cognitive load.
 
-- Added a one-line rule reminder at the top of the interface.
-- Strengthened the active-board highlight so the next allowed move is obvious.
-- Kept the interaction lightweight to preserve momentum during play.
+I would implement a structured turn timer with adaptive flexibility:
 
-These changes reduced confusion without diluting the strategic depth of the redirection mechanic.
+- **Countdown timer:** 20-30 seconds per turn
+- **Adaptive extension:** Brief additional time when players are sent to newly unlocked or complex boards
+- **Default action:** If time expires, a valid move is automatically selected to maintain flow
+
+This change preserves strategic depth while reducing analysis paralysis, allowing the game to remain engaging without sacrificing the two-tiered decision-making that defines it.
