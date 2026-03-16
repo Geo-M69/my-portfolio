@@ -1,0 +1,254 @@
+export const metadata = {
+  title: 'BOARDPUNK',
+  description:
+    'BOARDPUNK is a push-your-luck racing board game where players pilot floating cars through a futuristic city loop.',
+  alternates: {
+    canonical: '/blog/boardpunk',
+  },
+};
+
+I did **not change your content**, only improved the flow and added transition lines.
+
+---
+
+# BOARDPUNK
+
+*A push-your-luck racing board game about balancing greed and survival in a collapsing city.*
+
+---
+
+# 1. Game Overview
+
+## Designer
+
+**Geovany Munos**  
+Game Design Student
+
+---
+
+## Game Concept
+
+BOARDPUNK is a push-your-luck racing board game where players pilot floating cars through a futuristic city loop. Each move earns points but also raises a shared City Alert level. As the alert increases, the city becomes more dangerous, eventually disabling vehicles that stay on the track too long.
+
+Players are deciding whether to continue driving for additional points or Dock early to safely secure their score. Docking removes a player from the board but protects the points they have earned. The player with the highest score when the city becomes too dangerous wins the game.
+
+The central design goal of BOARDPUNK was to create tension between greed and safety. Every player's action increases the global City Alert level, meaning that individual decisions affect the entire table. This shared risk system encourages players to watch each other carefully and weigh whether continuing to drive is worth the growing danger.
+
+---
+
+### Design Context
+
+Before designing the mechanics, the project needed to operate within a specific set of technical and educational constraints.
+
+---
+
+## Project Constraints
+
+The project was developed within several constraints typical of a tabletop prototype assignment. The game had to function with minimal physical components, including a board, a six-sided die, player tokens, and a simple score tracking method. Because the project focused on gameplay systems rather than production quality, the prototype board and icons were created digitally to allow quick adjustments during iteration.
+
+From a design perspective, the game needed to support 2–4 players, run in approximately 30–40 minutes, and be understandable without the designer explaining the rules. This meant the mechanics had to remain simple enough that players could learn them directly from the rule sheet while still providing meaningful decisions.
+
+The assignment also required evidence of the iterative design process. Multiple playtests were conducted, observations were documented, and the rules evolved in response to player behavior and feedback.
+
+---
+
+### Assignment Goals
+
+With these constraints in mind, the project prompt guided how the design process would unfold.
+
+---
+
+## Project Prompt
+
+The assignment required designing a tabletop game prototype that demonstrates intentional design decisions under constraint. The game needed to introduce a clear system of player decisions, provide structured rules, and be refined through playtesting.
+
+The focus of the assignment was not visual polish but the design process itself. Designers were expected to prototype quickly, test frequently, and adjust the mechanics based on how real players interacted with the system.
+
+---
+
+### Development Approach
+
+To support rapid iteration and testing, I relied on simple tools that allowed the design to evolve quickly.
+
+---
+
+## Tools Used
+
+The development process relied on lightweight tools that supported rapid iteration. The board and icons were created digitally so the layout could be easily modified between playtests. Playtesting sessions were documented using observation notes, player feedback sheets, and score tracking records.
+
+The design was also supported by a written rulebook and playtest reports that documented each iteration. By keeping the tools simple and flexible, I was able to focus on improving the gameplay system rather than spending time refining visuals.
+
+---
+
+# 2. Design
+
+### From Idea to System
+
+With the design constraints established, the next step was translating the prompt into a gameplay system built around player decision making.
+
+---
+
+## Interpreting the Prompt
+
+When interpreting the prompt, I focused on creating a game where player decisions drive the entire experience. Rather than building a complex ruleset with many interacting systems, I wanted a simple mechanic that forces players to constantly evaluate risk.
+
+This led to the central question guiding the design:
+
+> **How long are you willing to risk staying in the game?**
+
+The City Alert system became the core mechanic that supports this idea. Every move increases a shared danger level, gradually transforming the environment from safe exploration to high-risk survival.
+
+---
+
+### Core Design Philosophy
+
+The mechanics of BOARDPUNK were built around push-your-luck gameplay and shared player tension.
+
+---
+
+## Design Inspirations
+
+Push-your-luck mechanics create tension by rewarding risk while punishing hesitation or overconfidence. In BOARDPUNK, players gain points by continuing to drive around the city loop, but each move also increases the City Alert level. As the alert level rises, the risk of losing a vehicle increases.
+
+This system forces players to evaluate the trade-off between short-term safety and long-term rewards. Docking early guarantees survival but limits scoring potential, while staying longer can produce higher scores at the cost of increasing danger.
+
+---
+
+### Encouraging Player Interaction
+
+To ensure players were constantly aware of each other’s decisions, the danger system was designed to be shared across the table.
+
+---
+
+### Shared Risk System
+
+A key design decision was making the City Alert level shared between all players. Instead of danger affecting players individually, every action contributes to a global risk meter.
+
+This creates indirect player interaction. When one player chooses to stay longer in the city, they are not only risking their own vehicle but also increasing the danger for everyone still driving. As a result, players pay close attention to each other's decisions and sometimes react emotionally when someone raises the alert level too quickly.
+
+This shared system allows the game to create table-wide tension without introducing direct player conflict mechanics.
+
+---
+
+### Board Structure
+
+The board layout was designed to reinforce the push-your-luck gameplay loop.
+
+---
+
+### Circular Board Design
+
+The board itself is structured as a continuous loop that players can travel around multiple times. This design supports a repeating cycle of actions: players move, earn points, increase danger, and decide whether to Dock.
+
+The loop structure reinforces the push-your-luck design philosophy. Each completed lap represents a growing investment of risk, and players must constantly judge whether they should continue for another lap or leave the city before conditions become too dangerous.
+
+<figure>
+  <img src="/images/Screenshot%20From%202026-03-15%2023-18-22.png" alt="BOARDPUNK board layout" className="aspect-video w-full rounded-xl" />
+  <figcaption>Prototype board layout used during playtesting.</figcaption>
+</figure>
+
+---
+
+### Identifying Problems
+
+Playtesting quickly revealed several issues with the early version of the rules.
+
+---
+
+## Design Challenges
+
+### Challenge 1 — Rule Confusion
+
+The first major challenge emerged during early playtesting. Players were confused about several parts of the rules, including the purpose of lockdown spaces, when the City Alert level increased, and how danger was applied to players.
+
+Because of this confusion, some players docked much earlier than intended. They believed the city was becoming dangerous more quickly than the rules actually specified.
+
+---
+
+### Solution
+
+To resolve this issue, I simplified the rule system significantly. Lockdown spaces were removed entirely, leaving the City Alert system as the single source of danger. I also clarified that City Alert increases once per round rather than once per turn.
+
+These changes reduced the number of interacting rules and made the system easier for players to understand without designer explanation.
+
+---
+
+### Challenge 2 — Weak Endgame
+
+Another issue identified during testing was that the late game felt predictable. Once the City Alert level became high, players had fewer meaningful decisions and the game tended to end quickly.
+
+---
+
+### Solution: The Drift Mechanic
+
+To improve the endgame, I introduced the Drift mechanic. When the City Alert level becomes high, players can choose to Drift instead of moving normally. Drifting allows players to move half their rolled value and choose whether to move forward or backward.
+
+This mechanic adds new strategic options during the most dangerous phase of the game. Players can attempt risky maneuvers to reach valuable spaces or escape toward Dock locations, while backward drifting increases the City Alert level further and amplifies the overall tension.
+
+---
+
+# 3. Playtesting
+
+### Testing the Design
+
+With the revised mechanics in place, multiple playtests were conducted to evaluate clarity, pacing, and player decision-making.
+
+---
+
+## Playtest Method
+
+Playtesting sessions were structured to evaluate how well the game could be learned independently. Players were given the rule sheet and asked to read it without any explanation from the designer. After reading the rules, they set up the game and began playing normally.
+
+During gameplay, I observed player behavior, recorded questions and moments of confusion, and noted emotional reactions to key events. At the end of each session, players were asked follow-up questions about pacing, clarity, and overall experience.
+
+This approach helped reveal whether the game mechanics were intuitive or required further clarification.
+
+---
+
+## Key Insights from Playtests
+
+The first playtest revealed significant rule clarity issues. Players misunderstood how docking worked and were confused by the lockdown spaces mentioned in the rules. Several players believed the City Alert level increased every turn rather than every round, which caused them to dock earlier than expected.
+
+Despite these issues, players consistently reported that deciding when to Dock was the most interesting part of the game. This confirmed that the core push-your-luck mechanic was working, even if the surrounding rules needed improvement.
+
+After simplifying the rules and removing the lockdown system, the second playtest showed much stronger results. Players quickly understood the goal of the game and began making intentional decisions about how long to stay in the city.
+
+Later playtests introduced the Drift mechanic, which significantly improved the late-game experience. Players experimented with risky movement strategies and reacted strongly when someone increased the City Alert level further. These moments created visible tension around the table and reinforced the push-your-luck dynamic.
+
+By the fourth playtest, most rule confusion had disappeared and players were able to understand the system quickly. The pacing of the game gradually increased in intensity as the City Alert level rose, creating a natural escalation toward the end of the game.
+
+---
+
+# 4. Next Steps
+
+### Future Iteration
+
+Although the current version of the game functions well, playtesting revealed opportunities for further refinement.
+
+---
+
+## Gameplay Change for Future Iteration
+
+If I were to continue developing the game, the next iteration would focus on adjusting the number and placement of Dock spaces on the board.
+
+Several players mentioned that there were limited opportunities to Dock safely late in the game. Because the City Alert level is usually highest in the final phase, missing a Dock space can force players to remain in danger longer than intended.
+
+---
+
+## Proposed Change
+
+A future version of the board would include one or two additional Dock spaces positioned in later sections of the track. These spaces would appear in areas where the City Alert level typically becomes dangerous, giving players more opportunities to exit strategically.
+
+---
+
+## Expected Gameplay Impact
+
+This adjustment would improve the strategic timing of docking decisions while reducing situations where players feel trapped in the dangerous late game. Players would still need to plan carefully to reach Dock spaces, but the additional opportunities would create more meaningful choices rather than forcing players into unavoidable risk.
+
+---
+
+# Designer Reflection
+
+Through this project I focused on demonstrating a design approach centered on clear mechanics, iterative testing, and player-driven decision making.
+
+The playtesting process showed how small rule changes can significantly improve clarity and pacing, reinforcing the importance of observing real player behavior during development.

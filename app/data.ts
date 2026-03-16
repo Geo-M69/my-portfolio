@@ -65,6 +65,12 @@ export const BLOG_POSTS: BlogPost[] = [
     link: '/blog/ultimate-tic-tac-toe',
     uid: 'blog-1',
   },
+  {
+    title: 'BOARDPUNK',
+    description: 'BOARDPUNK — a push-your-luck racing board game prototype exploring risk and reward.',
+    link: '/blog/boardpunk',
+    uid: 'blog-2',
+  },
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [
