@@ -1,0 +1,137 @@
+export const metadata = {
+  title: 'LIFTED',
+  description:
+    'A cooperative communication game about misinterpretation, pressure, and incomplete information.',
+  alternates: {
+    canonical: '/blog/lifted',
+  },
+};
+
+---
+
+# LIFTED
+
+*A cooperative communication game about misinterpretation, pressure, and incomplete information.*
+
+---
+
+# 1. Game Overview
+
+## Designer
+
+**Geovany Munos**
+Game Design Student
+
+---
+
+## Game Concept
+
+LIFTED is a 2-player cooperative game centered on communication under pressure. One player takes on the role of the Examiner (Mission Control), who has access to hidden information, while the other player, the Trainee or Operator, must act without seeing that information. The Examiner is responsible for describing a hidden pattern using restricted language, and the Trainee must interpret those instructions to recreate the pattern correctly. Because neither player has full visibility into the system, success depends entirely on how effectively they communicate and how accurately those instructions are interpreted.
+
+The core experience of the game is built arounds miscommunication. Even simple tasks become difficult when players cannot speak directly, forcing them to adapt their communication strategies over time. The design intentionally creates situations where misunderstanding is likely, but still understandable, so that players feel encouraged to improve rather than frustrated by failure.
+
+---
+
+### Design Context
+
+The project was developed within a set of constraints typical of a tabletop prototype assignment. The game needed to function with minimal components, including a board, chips, and a small set of cards, while remaining easy to set up and replay. It also needed to support short play sessions of around 5–8 minutes, encouraging multiple attempts and iterative learning. From a design perspective, one of the most important constraints was asymmetric information: players were not allowed to see each other’s materials, and communication had to be entirely verbal, with additional restrictions preventing direct descriptions.
+
+The assignment emphasized the importance of iteration, meaning that the design could not remain static. Instead, it needed to evolve based on playtesting, with clear evidence of how feedback influenced design decisions. This placed a strong focus on creating a system that could be easily modified and tested repeatedly.
+
+---
+
+### Project Prompt
+
+The prompt was designing a tabletop game that demonstrates intentional design decisions under constraint, with a particular focus on communication and player interaction. Rather than prioritizing visual polish, the goal was to create a system where player decisions drive the experience, rules can be understood without direct explanation, and playtesting meaningfully shapes the final outcome. In response to this, the central design question became how to turn miscommunication itself into the primary gameplay mechanic, rather than treating it as a side effect.
+
+---
+
+### Tools Used
+
+To support rapid iteration, the development process relied on lightweight and flexible tools. Digital design software such as Canva and Paint.NET was used to create the board and card layouts, allowing for quick adjustments between playtests. Rules and documentation were maintained in Google Docs, while physical prototypes were printed for in-person testing. Playtesting sessions were supported by observation notes and feedback sheets, which helped track player behavior, confusion points, and emotional responses. This approach ensured that the focus remained on improving gameplay rather than refining presentation.
+
+---
+
+# 2. Design
+
+## Interpreting the Prompt
+
+The design of LIFTED focuses on forcing players to communicate indirectly. Instead of allowing clear or precise instructions, the system restricts how information can be shared, requiring the Examiner to translate what they see into vague or indirect language. This creates a dynamic where the Trainee must interpret intent rather than follow explicit commands, making mistakes a result of miscommunication rather than randomness.
+
+At its core, the game is built around the question: how can players succeed without ever communicating perfectly?
+
+---
+
+## Design Approach and Inspiration
+
+The game draws inspiration from other asymmetric communication games, particularly those where one player has information the other lacks, as well as from the Pixar short *Lifted*, which provided both thematic direction and tone. The goal was to create a system that generates engagement through misunderstanding while still remaining accessible and fast-paced.
+
+To reinforce this, the design relies heavily on asymmetric roles. The Examiner understands the correct pattern but cannot communicate it directly, while the Trainee must act without full context. This ensures that neither player can succeed independently and that communication becomes the central mechanic driving the experience.
+
+---
+
+## Design Challenges and Solutions
+
+One of the most significant challenges emerged during early playtesting, where the first version of the game included a complex system involving symbol transformations, status effects, and beam positioning rules. While these mechanics were logically consistent, they created a high cognitive load, and players struggled to process multiple layers of rules at once. Many became confused or frustrated, not because the game was inherently difficult, but because too many systems were interacting simultaneously.
+
+To address this, the design was simplified dramatically. The layered rule systems were removed entirely and replaced with a grid-based pattern system that focuses on spatial interpretation. This shift reduced the amount of information players needed to process and allowed the game to refocus on communication rather than rule execution.
+
+Another issue identified during testing was that failure felt overly punishing. Early versions of the game often ended abruptly after a small number of mistakes, which prevented players from learning or improving. In response, a Noise system was introduced to create a more gradual failure condition, along with Override tokens that allow players to retry failed attempts. These changes made mistakes feel like part of the learning process rather than an immediate loss.
+
+A final challenge was that players were focusing more on understanding the rules than on communicating with each other. By simplifying the system and removing unnecessary complexity, the design redirected player attention toward interaction, interpretation, and adaptation, which better supports the intended experience.
+
+---
+
+# 3. Playtesting
+
+## Playtest Method
+
+Playtesting was conducted through multiple one-on-one sessions, where players were given the rules without any explanation and asked to set up and play the game independently. During these sessions, player behavior was observed closely, including moments of confusion, hesitation, and emotional reactions. Notes were taken throughout gameplay, and players were asked follow-up questions after each session to better understand their experience.
+
+This approach made it possible to evaluate whether the system was intuitive and whether the rules communicated the intended experience without relying on the designer’s presence.
+
+---
+
+## Key Insights
+
+The first iteration revealed significant issues with rule clarity and cognitive load. Players frequently expressed confusion when multiple rules were active at once and found it difficult to track how different systems interacted. This often led to frustration and a sense that the game was more about remembering rules than communicating effectively.
+
+In later iterations, after simplifying the system, the results improved significantly. Players were able to understand the core loop more quickly and began focusing more on communication rather than rule interpretation. While some confusion remained in the early rounds, it decreased as players became more familiar with the system, and communication between players improved noticeably over time.
+
+Players also responded positively to the pacing of the simplified version, noting that the game became more engaging as they learned how to interpret each other’s instructions. This confirmed that the core experience was working as intended once unnecessary complexity was removed.
+
+---
+
+## Iteration Changes
+
+Based on playtesting, several major changes were implemented. The symbol conversion system and other layered mechanics were removed, and the game shifted to a grid-based pattern system. A Noise system was added to create a gradual failure condition, and Override tokens were introduced to allow for recovery from mistakes.
+
+These changes significantly reduced cognitive load, improved pacing, and strengthened the focus on communication, which is the central mechanic of the game.
+
+---
+
+# 4. Next Steps
+
+## Future Iteration
+
+Although the current version of the game functions effectively, playtesting revealed that players still struggle with interpreting ambiguous instructions, particularly when spatial descriptions are unclear. This suggests that while miscommunication is working as intended, some confusion comes from a lack of structure rather than meaningful gameplay.
+
+---
+
+## Proposed Change
+
+The next iteration would introduce a more structured communication framework for the Examiner. This would include defined categories of allowed language, such as row, column, edge, and center, along with examples of valid and invalid instructions.
+
+---
+
+## Expected Impact
+
+This change would reduce unnecessary confusion while preserving the core challenge of interpreting indirect instructions. By clarifying how players are allowed to communicate, the game can maintain its focus on miscommunication as a skill-based challenge rather than a source of frustration. This would improve the early-game experience while still allowing for complexity and tension to emerge over time.
+
+---
+
+# Designer Reflection
+
+This project reflects a design approach centered on iteration, clarity, and player interaction. One of the most important lessons from this process was that removing complexity can be more impactful than adding new mechanics.
+
+Ultimately, the final design demonstrates a commitment to creating systems where players learn and improve through interaction, rather than through memorization of rules.

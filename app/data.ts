@@ -71,6 +71,13 @@ export const BLOG_POSTS: BlogPost[] = [
     link: '/blog/boardpunk',
     uid: 'blog-2',
   },
+  {
+    title: 'lifted',
+    description:
+      'A cooperative communication game about pressure, ambiguity, and teamwork.',
+    link: '/blog/lifted',
+    uid: 'blog-3',
+  },
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [
