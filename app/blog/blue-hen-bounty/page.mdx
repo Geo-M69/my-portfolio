@@ -1,0 +1,314 @@
+export const metadata = {
+  title: 'Blue Hen Bounty',
+  description:
+    'A semi-cooperative resource management game about food insecurity, stability, and community responsibility.',
+  alternates: {
+    canonical: '/blog/blue-hen-bounty',
+  },
+};
+
+---
+
+# Blue Hen Bounty
+
+*A semi-cooperative resource management game about food insecurity, stability, and community responsibility.*
+
+## 1. Game Overview
+
+### Designer
+
+**Geovany Munos**
+Game Design Student
+
+### Game Concept
+
+**Blue Hen Bounty** is a semi-cooperative card-drafting board game about campus food insecurity. Players take on the role of students trying to make it through four weeks while managing limited pantry supplies, stress, nutrition needs, hygiene needs, and unpredictable events.
+
+Each player is trying to earn the most **Well-Being Points**, but the game also includes a shared **Community Meter**. If the Community Meter reaches 0, everyone loses, even if one player has the highest individual score. This creates tension between personal success and community survival.
+
+My main design goal was to show that food insecurity is not just hunger. It is about stable access to the right resources at the right time: balanced food, hygiene products, emergency food, and community support. I intentionally built the game from the student experience of scarcity, not from the administrative side of running a pantry.
+
+### Design Context
+
+The project needed to work as a physical tabletop prototype that could be played and understood through written rules. Because of that, I had to design with several constraints in mind.
+
+The game needed to:
+
+- Work with printable cards, boards, and tokens
+- Support 2-4 players
+- Be playable in a short class playtest setting
+- Teach a social issue through mechanics, not just theme
+- Be clear enough that players could understand it without constant designer explanation
+- Show evidence of iteration through playtesting
+
+These constraints pushed me toward a compact system built around repeated weekly rounds. Each round follows the same basic structure: reveal an event, draw needs, draft pantry cards, build a weekly supply, and score the week.
+
+### Project Prompt
+
+I read the prompt as a challenge to communicate an idea through mechanics. I did not want food insecurity to sit in the background as just story flavor. I wanted the decisions themselves to create pressure around limited access, unstable resources, and shared responsibility.
+
+Early in development, I made a perspective choice: this game would model what scarcity feels like for students week to week, rather than simulating pantry operations from the administrator side.
+
+The central design question became:
+
+> How can I make players feel the tension between taking care of themselves and supporting the larger community?
+
+That question led me to a semi-cooperative structure. Players still chase Well-Being Points, but they cannot ignore the Community Meter. It gave the game room for individual strategy while keeping the social issue at the center.
+
+### Tools Used
+
+The prototype was made with digitally designed cards, a central board, player trackers, and physical tokens. The cards included **Pantry Cards**, **Need Cards**, and **Event Cards**. The board organized the Draft Pool, Community Shelf, Discard Pile, decks, Event Card space, and Community Meter.
+
+For the second iteration, I redesigned the game pieces to make the information clearer. Pantry Cards were updated with specific category labels such as **Protein**, **Carb**, **Produce**, **Hygiene**, and **Snack**, instead of only using a generic pantry label.
+
+---
+
+## 2. Design
+
+### Interpreting the Prompt
+
+When I designed **Blue Hen Bounty**, I focused on systems rather than surface-level awareness. Food insecurity is often reduced to "not having food," and I wanted the mechanics to challenge that oversimplification.
+
+The game uses several connected systems:
+
+- **Need Cards** show that different students require different resources.
+- **Pantry Cards** create limited access to those resources.
+- **Event Cards** interrupt plans and represent unstable support systems.
+- **Stress** tracks the pressure caused by unmet needs.
+- The **Community Meter** connects individual struggles to group stability.
+
+Together, these systems push players from viewing food insecurity as an individual hunger issue to seeing it as a broader stability issue.
+
+### Core Design Philosophy
+
+My design philosophy was simple components, meaningful tradeoffs. I wanted players to keep asking:
+
+> Do I take what I need, or do I give something up to help the community?
+
+That question shaped most of the design decisions.
+
+### Card Drafting
+
+The drafting system became the core of the game. Each week, players receive Pantry Cards, choose one, and pass the rest. This creates scarcity because players can see useful cards move around the table but cannot keep everything.
+
+I was inspired by **Sushi Go Party** when shaping this system. I liked how passing hands keeps everyone involved in every decision, and I adapted that pacing into a version centered on food access tradeoffs.
+
+This kept resource access active. Players were not just drawing random supplies and accepting the result. They had to choose priorities every round.
+
+Drafting also became the most successful part of the game during playtesting. Players consistently stayed engaged during the draft because every card choice felt limited and consequential. In the second iteration playtest, drafting was still described as the strongest part of the game.
+
+### Need Cards
+
+Need Cards represent different weekly situations students might face, such as **Finals Week**, **Long Work Shift**, **Sick Week**, **Tight Budget**, **Fresh Food Needed**, and **Basic Stability**. Each card requires a different combination of resources.
+
+I made this choice on purpose because I did not want resources to feel interchangeable. A student might have food but still lack hygiene items. Another might have emergency food but not balanced nutrition. Splitting needs into categories shows that support has to be appropriate, not just available.
+
+### Event Cards
+
+Event Cards represent instability in pantry access. Events such as **Supply Shortage**, **Limited Hours**, **Fresh Delivery**, **Finals Stress**, and **Unexpected Demand** change what players can rely on each week.
+
+I used this system to disrupt perfect planning. If players can predict everything, the game cannot communicate instability. Event Cards force adaptation and reinforce uncertain access.
+
+### Community Meter
+
+The Community Meter is the mechanic that turns the game from individual resource management into a semi-cooperative system. Players can win individually only if the community survives. If the Community Meter reaches 0, everyone loses.
+
+This was one of the most important decisions in the project. Without the Community Meter, the game turns into personal optimization. With it, every failed Need and every donation choice affects the group.
+
+It also let me show that individual instability can strain the larger community and push players to think beyond personal score.
+
+### Stress System
+
+Stress was designed as a consequence for instability. Players gain Stress when they partially meet or fail their Need Cards. In the updated rules, if a player reaches 6 Stress, the Community Meter drops by 1 and that player's Stress resets to 3.
+
+This made Stress more than a personal penalty. It became a bridge between individual pressure and community strain, which is central to the systems focus of the game.
+
+---
+
+## Design Challenges
+
+### Challenge 1 - Card Categories Were Unclear
+
+One of the biggest problems in the first iteration was that players did not always understand what category each Pantry Card belonged to. Players asked whether Snacks counted as Food and whether Hygiene counted toward Hunger.
+
+This was a serious problem. Category confusion slowed the game and weakened the message. If players are unsure what counts as food, they cannot meaningfully plan around nutrition, hunger, and hygiene.
+
+### Solution
+
+In the second iteration, I labeled Pantry Cards more clearly by category. The updated rules also define Food directly: **Protein, Carb, Produce, and Snack** count as Food, while **Hygiene does not count as Food**.
+
+This change improved clarity and helped players focus on decisions instead of definitions.
+
+### Challenge 2 - Scoring Had Too Many Steps
+
+Players enjoyed drafting, but scoring slowed the game down. They had to remember Need scoring, Hunger, Hygiene, Nutrition, Stress, Community Strain, and Donations. In playtesting, attention stayed high during drafting but dropped during scoring.
+
+The systems were related, but players needed a clearer resolution order.
+
+### Solution
+
+I added a specific scoring order:
+
+> **Need -> Hunger -> Hygiene -> Nutrition -> Stress -> Community -> Donations**
+
+This made scoring easier to follow because players could resolve one system at a time. It also made the rulebook work better without live explanation.
+
+### Challenge 3 - Donating Was Too Easy
+
+In an earlier version, donations raised the Community Meter too reliably. Players could protect the community too easily, which reduced the danger of everyone losing. During the first second-iteration playtest, players felt the Community Meter was too easy to maintain and that the game needed stronger consequences.
+
+That weakened the semi-cooperative tension. If donating is always easy and always optimal, it stops being a real decision.
+
+### Solution
+
+I changed the Donation Rule so that individual donations no longer automatically raise the Community Meter in the normal 3-4 player game. Now, if 0 or 1 players donate, the meter does not increase. If 2 or more players donate, it rises by 1. If every player donates, it rises by 2.
+
+The change turned donating into a group decision instead of an automatic fix. Now players have to coordinate and sacrifice together for the community to benefit.
+
+---
+
+## 3. Playtesting
+
+### Playtest Method
+
+I conducted multiple playtests across two iterations. Players used the printed cards, player boards, central board, and tokens. During each test, I observed how players read the rules, set up the game, drafted cards, scored each week, and reacted to the Community Meter.
+
+I focused on these questions:
+
+- Could players understand the rules without heavy explanation?
+- Was drafting creating meaningful decisions?
+- Did the Community Meter create real tension?
+- Did players understand the semi-cooperative goal?
+- Was scoring too slow or confusing?
+- Did the theme come through play?
+
+After each playtest, I recorded observations and player feedback, then used that feedback to decide what needed to change.
+
+### Iteration 1 Insights
+
+The first iteration showed that the theme was working, but the rules needed more clarity.
+
+Players understood that the game was about more than just collecting food. One player said:
+
+> Oh, so it is not just about getting food but getting the right things at the right time.
+
+That mattered to me because it showed the design goal was landing. Players were recognizing that food insecurity involves timing, resource type, and stability.
+
+However, the first iteration also revealed several problems:
+
+- Players were confused by Pantry Card categories.
+- Scoring needed a checklist.
+- Event timing was unclear.
+- The 2-player version made the Community Meter feel fragile.
+- Produce removal could feel too punishing.
+
+The most important feedback was about category labels. This stood out because it affected almost every other system. Hunger, Nutrition, Hygiene, and Need Cards all depend on players understanding card categories.
+
+### Iteration Changes
+
+After the first iteration, I made several changes:
+
+- Added clearer category labels to Pantry Cards
+- Clarified which cards count as Food
+- Clarified that Hygiene does not count as Food
+- Added a specific scoring order
+- Rewrote Event Cards with clearer timing language
+- Added clearer cleanup rules
+- Adjusted the Donation Rule
+- Added 2-player adjustments
+- Improved the player board and central board organization
+
+I was not trying to make everything simpler. I was trying to remove avoidable confusion so meaningful decisions could stand out.
+
+### Iteration 2 Insights
+
+The second iteration showed improvement. Confusion was lower, the Hunger Rule and Donation Rule were easier to understand, and scoring moved faster. In the second iteration playtest with Nora, the updated scoring structure helped prevent attention from dropping during the end of each week.
+
+The revised Donation Rule also worked better. Because the Community Meter could no longer be raised automatically by every donated card, donating felt more meaningful. Nora said:
+
+> "This makes more sense now. I can tell when donating matters."
+
+The Community Strain rule also helped connect personal failure to community stability. When one player failed a Need, both players paid more attention to the Community Meter. This strengthened the semi-cooperative structure of the game.
+
+### What Feedback Stood Out Most
+
+The most important feedback was that players wanted the game to remain focused on drafting. Even after other systems changed, players consistently identified drafting as the strongest and most interesting part of the experience.
+
+That helped me confirm the core loop was working. The game did not need a new headline mechanic. It needed better support around existing systems: clearer rules, stronger scoring structure, better category reminders, and more intentional Community Meter pressure.
+
+### How the Game Improved
+
+The game improved by becoming clearer and more intentional. The first version had the right idea, but players needed too much clarification. The second version taught itself better.
+
+The biggest improvement was that players could focus more on strategy:
+
+- Which card should I draft?
+- Should I prioritize my Need Card or take flexible Food?
+- Can I afford to donate?
+- Is the Community Meter safe?
+- Should I risk partial completion or protect against Hunger?
+
+That is where I wanted the difficulty to live. I did not want challenge coming from unclear rules.
+
+---
+
+## 4. Next Steps
+
+### Future Iteration
+
+If I had another iteration, I would add a **Food Category Reminder** directly onto the Player Boards or central board.
+
+This would be a gameplay clarity change, not just a visual tweak. The reminder would reduce rule-checking during drafting and scoring and improve flow.
+
+### Proposed Change
+
+I would add a small reference box that says:
+
+> **Food = Protein, Carb, Produce, Snack**
+> **Non-Food = Hygiene**
+> **Hunger checks only Food used in Weekly Supply**
+> **Nutrition bonus needs 3 different Food categories**
+
+### Why This Change
+
+Even after the rules improved, players still needed occasional reminders about what counted as Food. In the second iteration playtest, Nora specifically wanted a small Food Category reminder on the board or Player Boards.
+
+This would solve a repeated playtest issue without adding a new system. It would simply make the existing systems easier to use.
+
+### Expected Gameplay Impact
+
+The reminder would speed up scoring and reduce small confusion points. More importantly, it would keep attention on decisions instead of definitions.
+
+The game should be difficult because resources are limited and decisions are tense. It should not be difficult because players forget whether Hygiene counts as Food.
+
+By making the categories visible, players could spend more attention on strategy, cooperation, and risk management.
+
+---
+
+## Images to Include
+
+### Image 1 - Iteration 2 Central Board
+
+<figure>
+  <object data="/images/Untitled_Artwork-1.pdf" type="application/pdf" className="aspect-video w-full rounded-xl">
+    <a href="/images/Untitled_Artwork-1.pdf">View the Iteration 2 central board PDF</a>
+  </object>
+  <figcaption>Iteration 2 central board showing the shared community systems and deck layout.</figcaption>
+</figure>
+
+### Image 2 - Iteration 2 Player Tracker
+
+<figure>
+  <img src="/images/Gemini_Generated_Image_hrt3kthrt3kthrt3.png" alt="Blue Hen Bounty iteration 2 player tracker with well-being points, stress, need card, and weekly supply" className="aspect-video w-full rounded-xl" />
+  <figcaption>Iteration 2 player tracker showing individual well-being, stress, and weekly resource planning.</figcaption>
+</figure>
+
+---
+
+## Designer Reflection
+
+With **Blue Hen Bounty**, I focused on building a system where players learn through pressure, tradeoffs, and repeated decisions. This project reinforced that a transformational game does not need constant explanation. The mechanics should let players experience the issue directly in a simplified but meaningful way.
+
+My biggest lesson was that clarity is part of theme. If players are confused by rules, they cannot engage with the message. Improving labels, scoring order, event timing, and donation rules made the idea communicate more clearly.
+
+This project reflects the kind of designer I want to be: someone who builds systems around player decisions, tests honestly, and removes unnecessary confusion so the intended experience gets stronger.

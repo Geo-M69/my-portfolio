@@ -78,6 +78,13 @@ export const BLOG_POSTS: BlogPost[] = [
     link: '/blog/lifted',
     uid: 'blog-3',
   },
+  {
+    title: 'Blue Hen Bounty',
+    description:
+      'A semi-cooperative card-drafting game about food insecurity, tradeoffs, and community stability.',
+    link: '/blog/blue-hen-bounty',
+    uid: 'blog-4',
+  },
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [
